@@ -35,11 +35,11 @@ Here is a list of all video sources from the whole course.
 
 Here are some notes on the specific tools that are used during the course.
 
-- [Docker](Docker.md)
-- [PostgreSQL](Postgres.md)
-- [Terraform](Terraform.md)
-- [Google Cloud CLI](Google_Cloud_CLI.md)
-- [Airflow](Airflow.md)
+- [Docker](Tools/Docker.md)
+- [PostgreSQL](Tools/Postgres.md)
+- [Terraform](Tools/Terraform.md)
+- [Google Cloud CLI](Tools/Google_Cloud_CLI.md)
+- [Airflow](Tools/Airflow.md)
 
 
 Additionally, the following gists with cheatsheets are available.
