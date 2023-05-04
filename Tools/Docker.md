@@ -39,7 +39,7 @@ Overall, Docker provides a powerful and flexible platform for building and deplo
 </details>
 
 
-### 💻 Commands
+## 💻 Commands
 <details><summary>Here are 20 of the most commonly used Docker commands:
 </summary>
 
@@ -68,7 +68,7 @@ These are just a few of the most commonly used Docker commands. There are many m
 </details>
 
 
-### 📦 Running a Docker container
+## 📦 Running a Docker container
 
 Docker comes with an example image, that contains a http webpage with tutorials.
 
@@ -93,7 +93,7 @@ You can combine single character flags to shorten the full command. As an exampl
 
 </br>
 
-### ✍️ Writing a docker file
+## ✍️ Writing a docker file
 
 
 1. **`FROM`**: </br>
@@ -308,7 +308,7 @@ Shutting it down:
 
 ## passing environment variables to dockerfile
 
-<details><summary>A lot to read here:</summary>
+<details><summary>Docker ARG, ENV and .env</summary>
 
 [Docker ARG, ENV and .env - a Complete Guide](https://vsupalov.com/docker-arg-env-variable-guide)
  </br>
