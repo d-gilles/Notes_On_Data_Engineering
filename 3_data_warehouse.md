@@ -31,7 +31,7 @@
 This lesson will cover the topics of _Data Warehouse_ and _BigQuery_.
 # OLAP vs OLTP
 
-_[Video source](https://www.youtube.com/watch?v=jrHljAoD6nM&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=25)_
+_[Video 3.1.1 - Data Warehouse and BigQuery](https://www.youtube.com/watch?v=jrHljAoD6nM&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=25&t=28s)_
 
 In Data Sxience, when we're discussing data processing systems, there are 2 main types: **OLAP** and **OLTP** systems.
 
@@ -55,7 +55,7 @@ _[Back to the top](#table-of-contents)_
 
 # What is a Data Warehouse?
 
-_[Video source](https://www.youtube.com/watch?v=jrHljAoD6nM&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=25)_
+_[Video 3.1.1 - Data Warehouse and BigQuery](https://www.youtube.com/watch?v=jrHljAoD6nM&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=25&t=138s)_
 
 A **Data Warehouse** (DW) is an ***OLAP solution*** meant for ***reporting and data analysis***. Unlike Data Lakes, which follow the ELT model, DWs commonly use the ETL model which was [explained in lesson 2](2_data_ingestion.md#etl-vs-elt).
 
@@ -67,7 +67,7 @@ _[Back to the top](#table-of-contents)_
 
 # BigQuery
 
-_[Video source](https://www.youtube.com/watch?v=jrHljAoD6nM&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=25)_
+_[Video 3.1.1 - Data Warehouse and BigQuery](https://www.youtube.com/watch?v=jrHljAoD6nM&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=25&t=216s)_
 
 BigQuery (BQ) is a Data Warehouse solution offered by Google Cloud Platform.
 * BQ is ***serverless***. There are no servers to manage or database software to install; this is managed by Google and it's transparent to the customers.
@@ -89,7 +89,7 @@ Data processing has a [2-tier pricing model](https://cloud.google.com/bigquery/p
    *  A minimum of 100 slots is required for the flat-rate pricing which costs US$2,000 per month.
    *  Queries take up slots. If you're running multiple queries and run out of slots, the additional queries must wait until other queries finish in order to free up the slot. On demand pricing does not have this issue.
    *  The flat-rate pricing only makes sense when processing more than 400TB of data per month.
-  
+
 When running queries on BQ, the top-right corner of the window will display an approximation of the size of the data that will be processed by the query. Once the query has run, the actual amount of processed data will appear in the _Query results_ panel in the lower half of the window. This can be useful to quickly calculate the cost of the query.
 
 _[Back to the top](#table-of-contents)_
@@ -125,7 +125,7 @@ _[Back to the top](#table-of-contents)_
 
 ## Partitions
 
-_Video sources: [1](https://www.youtube.com/watch?v=jrHljAoD6nM&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=25), [2](https://www.youtube.com/watch?v=-CqXf7vhhDs&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=26)_
+_[Video 3.1.1 - Data Warehouse and BigQuery](https://www.youtube.com/watch?v=jrHljAoD6nM&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=25&t=724s)_
 
 BQ tables can be ***partitioned*** into multiple smaller tables. For example, if we often filter queries based on date, we could partition a table based on date so that we only query a specific sub-table based on the date we're interested in.
 
@@ -184,7 +184,7 @@ _[Back to the top](#table-of-contents)_
 
 ## Clustering
 
-_Video sources: [1](https://www.youtube.com/watch?v=jrHljAoD6nM&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=25), [2](https://www.youtube.com/watch?v=-CqXf7vhhDs&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=26)_
+_[Video 3.1.1 - Data Warehouse and BigQuery](https://www.youtube.com/watch?v=jrHljAoD6nM&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=25&t=1125s)_
 
 ***Clustering*** consists of rearranging a table based on the values of its columns so that the table is ordered according to any criteria. Clustering can be done based on one or multiple columns up to 4; the ***order*** of the columns in which the clustering is specified is important in order to determine the column priority.
 
@@ -238,7 +238,7 @@ _[Back to the top](#table-of-contents)_
 
 ## Partitioning vs Clustering
 
-_[Video source](https://www.youtube.com/watch?v=-CqXf7vhhDs&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=26)_
+_[Video 3.1.2 - Partioning and Clustering](https://www.youtube.com/watch?v=-CqXf7vhhDs&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb)_
 
 As mentioned before, you may combine both partitioning and clustering in a table, but there are important differences between both techniques that you need to be aware of in order to decide what to use for your specific scenario:
 
@@ -259,7 +259,7 @@ _[Back to the top](#table-of-contents)_
 
 ## Best practices
 
-_[Video source](https://www.youtube.com/watch?v=k81mLJVX08w&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=27)_
+_[Video 3.2.1 - BigQuery Best Practices](https://www.youtube.com/watch?v=k81mLJVX08w&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb)_
 
 Here's a list of [best practices for BigQuery](https://cloud.google.com/bigquery/docs/best-practices-performance-overview):
 
@@ -286,15 +286,10 @@ Here's a list of [best practices for BigQuery](https://cloud.google.com/bigquery
 
 _[Back to the top](#table-of-contents)_
 
-## Internals
-
-_[Video source](https://www.youtube.com/watch?v=k81mLJVX08w&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=27)_
-
-_[Additional source](https://cloud.google.com/blog/products/data-analytics/new-blog-series-bigquery-explained-overview)_
-
-While it's not strictly necessary to understand how the internals of BigQuery work, it can be useful to know in order to understand the reasoning behind the [best practices](#best-practices).
 
 ### BigQuery Architecture
+
+While it's not strictly necessary to understand how the internals of BigQuery work, it can be useful to know in order to understand the reasoning behind the [best practices](#best-practices).
 
 BigQuery is built on 4 infrastructure technologies.
 * ***Dremel***: the _compute_ part of BQ. It executes the SQL queries.
@@ -333,7 +328,7 @@ _[Back to the top](#table-of-contents)_
 
 ## Introduction to BigQuery ML
 
-_[Video source](https://www.youtube.com/watch?v=B-WtpB0PuG4&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=29)_
+_[Video 3.3.1 - BigQuery Machine Learning](https://www.youtube.com/watch?v=B-WtpB0PuG4&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb)_
 
 ***BigQuery ML*** is a BQ feature which allows us to create and execute Machine Learning models using standard SQL queries, without additional knowledge of Python nor any other programming languages and without the need to export data into a different system.
 
@@ -483,7 +478,7 @@ _[Back to the top](#table-of-contents)_
 
 ## BigQuery ML deployment
 
-_[Video source](https://www.youtube.com/watch?v=BjARzEWaznU&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=30)_
+_[Video 3.3.2 - BigQuery Machine Learning Deployment](https://www.youtube.com/watch?v=BjARzEWaznU&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb)_
 
 ML models created within BQ can be exported and deployed to Docker containers running TensorFlow Serving.
 
