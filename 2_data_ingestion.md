@@ -572,7 +572,7 @@ _[Back to the top](#table-of-contents)_
 
 # GCP's Transfer Service
 
-_[Video source](https://www.youtube.com/watch?v=rFOFTfD1uGk&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=22)_
+_[Video 2.4.1 - Moving Files from AWS to GPC with Transfer Service](https://www.youtube.com/watch?v=rFOFTfD1uGk&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=22)_
 
 [Transfer Service](https://cloud.google.com/storage-transfer-service) is a GCP service to transfer data from multiple sources to Google's Cloud Storage. This is useful for Data Lake purposes.
 

@@ -181,7 +181,7 @@ In the IDE windows, press the green _Initilize_ button to create the project fil
 
 ## dbt Core
 
-_[Video source](https://www.youtube.com/watch?v=1HmL63e-vRs&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=37)_
+_[Video 4.2.2 - Start Your dbt Project: Postgres and dbt Core Locally (Alternative B)](https://www.youtube.com/watch?v=1HmL63e-vRs&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb)_
 
 Installing dbt Core locally can be done following the steps in [the official docs](https://docs.getdbt.com/dbt-cli/install/overview). More instructions are also available [in this link](https://github.com/DataTalksClub/data-engineering-zoomcamp/tree/main/week_4_analytics_engineering/docker_setup).
 
@@ -191,7 +191,7 @@ _[Back to the top](#)_
 
 # Developing with dbt
 
-_[Video source](https://www.youtube.com/watch?v=UVI30Vxzd6c&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=38)_
+_[Video 4.3.1 - Build the First dbt Models](https://www.youtube.com/watch?v=UVI30Vxzd6c&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb)_
 
 ## Anatomy of a dbt model
 
@@ -233,6 +233,8 @@ After the code is compiled, dbt will run the compiled code in the Data Warehouse
 Additional model properties are stored in YAML files. Traditionally, these files were named `schema.yml` but later versions of dbt do not enforce this as it could lead to confusion.
 
 ## The FROM clause
+
+_[Video 4.3.1 - Build the First dbt Models - 03:15 The FROM clause: Sources and seeds](https://www.youtube.com/watch?v=UVI30Vxzd6c&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=35&t=195s)_
 
 The `FROM` clause within a `SELECT` statement defines the _sources_ of the data to be used.
 
@@ -311,6 +313,9 @@ WITH green_data AS (
 
 ## Defining a source and creating a model
 
+_[Video 4.3.1 - Build the First dbt Models - 08:38 Define a source and develop the first model](https://www.youtube.com/watch?v=UVI30Vxzd6c&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=35&t=518s)_
+
+
 We will now create our first model.
 
 We will begin by creating 2 new folders under our `models` folder:
@@ -350,6 +355,8 @@ The advantage of having the properties in a separate file is that we can easily 
 You may know run the model with the `dbt run` command, either locally or from dbt Cloud.
 
 ## Macros
+
+_[Video 4.3.1 - Build the First dbt Models - 17:24 Definition and usage of macros ](https://www.youtube.com/watch?v=UVI30Vxzd6c&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=35&t=1044s)_
 
 ***Macros*** are pieces of code in Jinja that can be reused, similar to functions in other languages.
 
@@ -420,6 +427,8 @@ where vendorid is not null
 
 ## Packages
 
+_[Video 4.3.1 - Build the First dbt Models - 24:10 Importing and using dbt packages](https://www.youtube.com/watch?v=UVI30Vxzd6c&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=35&t=1450s)_
+
 Macros can be exported to ***packages***, similarly to how classes and functions can be exported to libraries in other languages. Packages contain standalone dbt projects with models and macros that tackle a specific problem area.
 
 When you add a package to your project, the package's models and macros become part of your own project. A list of useful packages can be found in the [dbt package hub](https://hub.getdbt.com/).
@@ -443,6 +452,9 @@ select
 * The `surrogate_key()` macro generates a hashed [surrogate key](https://www.geeksforgeeks.org/surrogate-key-in-dbms/) with the specified fields in the arguments.
 
 ## Variables
+
+_[Video 4.3.1 - Build the First dbt Models - 29:18 Definition of variables and setting a variable from the cli](https://www.youtube.com/watch?v=UVI30Vxzd6c&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=35&t=1758s)_
+
 
 Like most other programming languages, ***variables*** can be defined and used across our project.
 
